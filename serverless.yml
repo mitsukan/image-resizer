@@ -1,0 +1,11 @@
+service: image-resizer
+
+provider:
+  name: aws
+  runtime: python3.7
+  stage: dev
+  region: eu-west-2
+
+functions:
+  handler:
+    handler: image_resizer.predict
